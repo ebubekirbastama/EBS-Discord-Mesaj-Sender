@@ -1,0 +1,4 @@
+﻿For ($i=0; $i -lt 1000; $i++) 
+{
+Invoke-WebRequest -Uri "https://discordapp.com/api/v8/channels/<Chanelid>/messages" -Method "POST" -Headers @{"method"="POST"; "authority"="discordapp.com"; "scheme"="https"; "path"="/api/v8/channels/<Chanel İD>/messages"; "x-super-properties"="<xsuperid>"; "origin"="https://discordapp.com"; "authorization"="<authorization id>"; "accept-language"="tr"; "user-agent"="Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) discord/0.0.308 Chrome/78.0.3904.130 Electron/7.3.2 Safari/537.36"; "accept"="*/*"; "sec-fetch-site"="same-origin"; "sec-fetch-mode"="cors"; "referer"="https://discordapp.com/channels/<chanelid>/741631586046443604"; "accept-encoding"="gzip, deflate, br"; "cookie"="__cfduid=<cookiecfuid>; locale=tr"} -ContentType "application/json" -Body "{`"content`":`"den`",`"nonce`":$i,`"tts`":false}"
+}
